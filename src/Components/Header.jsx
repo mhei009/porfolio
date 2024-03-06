@@ -4,7 +4,7 @@ const Header = () => {
   const [selected, setSelected] = useState(""); 
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-950">
+    <nav className="bg-white border-gray-200 dark:bg-slate-800">
       <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-2"><h1 className={' text-rose-700 font-mono font-bold'}>Blahblah</h1>
       </div>
       <div className="max-w-screen-xl px-3 py-3 mx-auto ">
