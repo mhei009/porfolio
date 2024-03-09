@@ -3,9 +3,11 @@ import React from 'react';
 function AboutMe() {
   return (
     <>  
-    <div className='min-h-screen   bg-slate-700'>
-      <h2 className='text-2xl text-cyan-500'>About Me</h2>
-    <section> 
+    <div className='min-h-screen  bg-slate-700 pt-10'>
+      
+      <h2 className='text-5xl font-bold mb-1 text-cyan-500 mt-4'>About Me</h2>
+     
+      <section> 
         <p className='text-1xl text-slate-100 mb-2 '>Hello! I'm Heidi Espiritu, an aspiring Frontend Developer with a passion for creating engaging and user-friendly web experiences.  I'm constantly expanding my skills in modern frontend technologies. </p>
     </section>
 

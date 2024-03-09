@@ -8,7 +8,7 @@ const LandingPage = () => {
   return (
     <section className="min-h-screen bg-neutral-900">
       <div className='hero_container inline-block'>
-        <h1 className="text-5xl font-bold mb-1 text-cyan-500">Heidi Espiritu</h1>
+        <h1 className="text-5xl font-bold mb-1 text-cyan-500 mt-4">Heidi Espiritu</h1>
         <p className="text-gray-400 text-xl">Aspiring Frontend Developer..</p>
       </div>
       <p className='text-gray-100'>A frontend developer student based in Stockholm Sweden</p>
