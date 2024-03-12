@@ -5,7 +5,8 @@ const Header = () => {
 
   return (
     <nav className="bg-white border-gray-200 dark:bg-slate-800">
-      <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-2"><h1 className={' text-rose-700 font-mono font-bold'}>Blahblah</h1>
+      <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-2">
+      
       </div>
       <div className="max-w-screen-xl px-3 py-3 mx-auto ">
           <ul className="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm mx-auto justify-center">
