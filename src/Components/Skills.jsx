@@ -1,4 +1,4 @@
-// Skills.jsx
+
 import React from 'react';
 import { ReactComponent as HtmlIcon } from '../Assets/Icons/html-5-logo-svgrepo-com.svg';
 import { ReactComponent as CssIcon } from '../Assets/Icons/css-3-svgrepo-com.svg';
