@@ -6,7 +6,7 @@ function AboutMe() {
       <div className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
         <div className="w-full items-center mx-auto max-w-screen-lg">
           <div className="group grid w-full grid-cols-2">
-            {/* Left side content */}
+     
             <div className="pr-12">
               <p className="mb-4 font-semibold text-xl text-grey">
                 Hello! I'm Heidi Espiritu, an aspiring Frontend Developer with a passion for creating engaging and user-friendly web experiences.  I'm constantly expanding my skills in modern frontend technologies.
