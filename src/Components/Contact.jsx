@@ -7,7 +7,7 @@ import '../index.css';
 
 function Contact() {
   return (
-    <div className="contact bg-black">
+    <div className="contact">
       <h2>Reach out!</h2>
       <div className="contact-links border-double border-4 border-sky-500 rounded-lg w-1/2 mt-3 p-3 bg-slate-100 ">
         <ul className='contact-container'>

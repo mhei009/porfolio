@@ -1,26 +1,32 @@
-.text-gray-400 {
-  font-size: 1.5rem;
-  border-right: 3px solid;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 3s steps(27) infinite,
-    cursor 1.4s step-end 0.2s infinite alternate;
+.landingpage__container {
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 3rem;
+  background-color: var(--white);
+  min-height: 96vh;
 }
 
-@keyframes cursor {
-  50% {
-    border-color: transparent;
-  }
+.hero {
+  width: 35%;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
+.landingpage__content {
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
 }
 
-.briefcase-outline {
-  width: 1.7rem; /* Example width */
-  height: auto;
+.landingpage__h2 {
+  font-size: xx-large;
+}
+
+.landingpage__p {
+  color: rgb(83, 141, 143);
+}
+
+.landingpage__briefcase {
+  display: flex;
+  margin-top: 1rem;
 }

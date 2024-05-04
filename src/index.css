@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import url(../src/Blocks/Global.css);
 @import url(../src/Blocks/Header.css);
 @import url(../src/Blocks/LandingPage.css);
