@@ -37,8 +37,8 @@ function Skills() {
     ];
 
     return (
+      <div className='skills'>
         <div className="skills__container">
-            <div id="animation-container" className="animation-container"></div>
             <h2 className='text-xl font-bold mb-1 text-cyan-600 mt-4'>Tech Stack</h2>
             <ul className='skill-list'>
                 {skillsList.map((skill, index) => (
@@ -47,12 +47,13 @@ function Skills() {
                         <span>{skill.name}</span>
                         <div className="progress-bar">
                             <div className="progress" style={{ '--progress-percentage': `${skill.progress}%` }} >
-                            </div>
+                            <div id="animation-container" className="animation-container">
+                            </div></div>
                         </div>
                     </li>
                 ))}
             </ul>
-        </div>
+        </div></div>
     );
 }
 

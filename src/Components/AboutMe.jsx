@@ -19,7 +19,7 @@ function AboutMe() {
               </h3>
             </div>
             
-            {/* Right side with Lottie animation */}
+          
             <div className="flex justify-center items-center">
               <iframe 
                 src="https://lottie.host/embed/91187e3e-b098-4418-b328-7461e120cd1e/ryhfdZCdwg.json" 
