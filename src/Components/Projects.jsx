@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import projectData from '../projectData.json';
 import todoImage from '../Assets/images/todo.png'; 
 import reactorsImage from '../Assets/images/reactors.png';
@@ -9,6 +9,31 @@ import frimarkImage from '../Assets/images/frimark.png';
 import '../index.css';
 
 const Projects = () => {
+  const [visibleIndex, setVisibleIndex] = useState(null);
+
+  const handleIntersection = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setVisibleIndex(parseInt(entry.target.getAttribute('data-index')));
+      }
+    });
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(handleIntersection, {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5,
+    });
+
+    document.querySelectorAll('.project-card').forEach((card, index) => {
+      card.setAttribute('data-index', index);
+      observer.observe(card);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   const getImage = (title) => {
     switch (title) {
       case 'Tick':
@@ -32,7 +57,7 @@ const Projects = () => {
       <p className='projects__p'>So far projects I have done during my education</p>
       <div className="projects-list">
         {projectData.map((project, index) => (
-          <div className="project-card" key={index}>
+          <div className={`project-card ${visibleIndex === index ? 'fade-in' : ''}`} key={index}>
             <div className="card-content">
               <h3 className='project__title'>{project.title}</h3>
               <p className='project__description'>

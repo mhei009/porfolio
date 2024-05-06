@@ -75,3 +75,25 @@
   border-radius: 3px;
   margin-bottom: 1.3rem;
 }
+
+/* Define the animation */
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* transitions for fade-in and fade-out */
+.project-card {
+  opacity: 0.2;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
