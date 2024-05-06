@@ -19,9 +19,7 @@ const Header = () => {
             <li>
               <a href="#projects" className={`text-gray-900 hover:underline ${selected === "projects" ? "underline" : ""}`} onClick={() => setSelected("projects")}>Projects</a>
             </li>
-            <li>
-              <a href="#contact" className={`text-gray-900 hover:underline ${selected === "contact" ? "underline" : ""}`} onClick={() => setSelected("contact")}>Contact</a>
-            </li>
+           
           </ul>
         </div>
       </nav>

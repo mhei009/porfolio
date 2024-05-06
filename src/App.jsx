@@ -4,7 +4,7 @@ import LandingPage from './Components/LandingPage';
 import AboutMe from './Components/AboutMe';
 import Skills from './Components/Skills'
 import Projects from './Components/Projects';
-import Contact from './Components/Contact';
+
 
 
 
@@ -15,9 +15,10 @@ function App() {
       <Header />
       <LandingPage />
       <AboutMe />
-     <Skills />
+      <Skills />
+    
       <Projects />
-      <Contact />
+      
     </div>
   );
 }

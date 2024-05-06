@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Tick",
+    "description": "Integrated backend into our todo list project. Built on REST principles and HTTP Protocol best practices with integrated database support. Robust user authentication system. CI/CD pipelines automate testing and deployment. Made with detailed queries to tailored authentication mechanisms.",
+    "image": "images/todo.png",
+    "codeLink": "https://github.com/yourusername/tick",
+    "liveSiteLink": "https://tick.yourdomain.com",
+    "techStack": ["React", "Node.js", "PostGres", "Tailwind" ]
+    
+  },
+  {
+    "title": "Reactors Project",
+    "description": "Description of the Reactors Project",
+    "image": "images/reactors.png",
+    "codeLink": "https://github.com/yourusername/reactors",
+    "liveSiteLink": "https://reactors.yourdomain.com",
+    "techStack": ["React", "CSS" ]
+  },
+  {
+    "title": "Fantasy Project",
+    "description": "Description of the Fantasy Project",
+    "image": "images/fantasy.png",
+    "codeLink": "https://github.com/yourusername/fantasy",
+    "liveSiteLink": "https://fantasy.yourdomain.com",
+    "techStack": ["HTML", "CSS", "Javascript"  ]
+  },
+  {
+    "title": "Matchup Project",
+    "description": "Description of the Matchup Project",
+    "image": "images/matchup.png",
+    "codeLink": "https://github.com/yourusername/matchup",
+    "liveSiteLink": "https://matchup.yourdomain.com",
+    "techStack": ["HTML", "CSS", "Javascript" ]
+  },
+  {
+    "title": "Frimark Project",
+    "description": "Description of the Frimark Project",
+    "image": "images/frimark.png",
+    "codeLink": "https://github.com/yourusername/frimark",
+    "liveSiteLink": "https://frimark.yourdomain.com",
+    "techStack": ["React", "Chakra ui" ]
+    
+  }
+]

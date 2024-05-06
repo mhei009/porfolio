@@ -1,4 +1,77 @@
-.video {
+.projects {
+  background-color: var(--white);
+  padding: 7rem;
+  margin-top: 7.7rem;
+}
+
+.projects_h2 {
+}
+
+.project__title {
+  font-size: x-large;
+  margin-bottom: 0, 5rem;
+}
+
+.projects__p {
+  margin-bottom: 3rem;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
   width: 100%;
-  height: auto;
+  margin-bottom: 10rem;
+}
+
+.project-card:nth-child(even) {
+  flex-direction: row-reverse; /* Reverse the flex direction for even-numbered cards */
+}
+
+.project-card:nth-child(odd) {
+  flex-direction: row; /* Default flex direction for odd-numbered cards */
+}
+
+.project__description {
+  flex: 1; /* Take remaining space */
+}
+
+.card-image {
+  width: 50%;
+  box-shadow: 1rem 0.7rem 10px rgb(0 0 0 / 0.2);
+}
+
+.card-content {
+  bottom: 0;
+  left: 0;
+  right: 5rem;
+  background-color: rgba(228, 167, 75, 0.9);
+  padding: 10px;
+  width: 40%;
+  padding: 1rem;
+  box-shadow: 0 0.7rem 10px rgb(0 0 0 / 0.2);
+}
+
+.tech-stack-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.tech-stack-list {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.tech-stack-item {
+  display: inline-block;
+  margin-right: 0.5rem; /* Add spacing between tech stack items */
+  padding: 0.3rem 0.5rem;
+  background-color: #eaeaeaa5; /* Customize the background color */
+  border-radius: 3px;
+  margin-bottom: 1.3rem;
 }

@@ -1,65 +1,60 @@
 import React from 'react';
-import reactors from '../Assets/reactors.png'
-import fantasy from '../Assets/fantasy project.png'
-import todo from '../Assets/todo.png'
-import matchup from '../Assets/matchup.png'
-import frimark from '../Assets/frimark.png'
-; 
+import projectData from '../projectData.json';
+import todoImage from '../Assets/images/todo.png'; 
+import reactorsImage from '../Assets/images/reactors.png';
+import fantasyImage from '../Assets/images/fantasy.png';
+import matchupImage from '../Assets/images/matchup.png';
+import frimarkImage from '../Assets/images/frimark.png';
 
+import '../index.css';
 
 const Projects = () => {
+  const getImage = (title) => {
+    switch (title) {
+      case 'Tick':
+        return todoImage;
+      case 'Reactors Project':
+        return reactorsImage;
+      case 'Fantasy Project':
+        return fantasyImage;
+      case 'Matchup Project':
+        return matchupImage;
+      case 'Frimark Project':
+        return frimarkImage;
+      default:
+        return null;
+    }
+  };
+
   return (
     <div className="projects">
-      <h2>Previous Projects</h2>
+      <h2 className='text-3xl font-bold mb-5 mt-4'>Previous Projects</h2>
+      <p className='projects__p'>So far projects I have done during my education</p>
       <div className="projects-list">
-        <div className="project-card">
-        <div className="project-card">
-          <div className="card-image">
-            <img src={todo} alt="Fantasy Project" />
+        {projectData.map((project, index) => (
+          <div className="project-card" key={index}>
+            <div className="card-content">
+              <h3 className='project__title'>{project.title}</h3>
+              <p className='project__description'>
+                {project.description}
+                <br />
+                <strong className="tech-stack-label">Tech Stack:</strong> 
+                <ul className="tech-stack-list">
+                  {project.techStack.map((tech, index) => (
+                    <li key={index} className="tech-stack-item">{tech}</li>
+                  ))}
+                </ul>
+              </p>
+              <div className="project__buttons">
+                <a href={project.codeLink} className="button" target="_blank" rel="noopener noreferrer">Code</a>
+                <a href={project.liveSiteLink} className="button" target="_blank" rel="noopener noreferrer">Live Site</a>
+              </div>
+            </div>
+            <div className="card-image">
+              <img src={getImage(project.title)} alt={project.title} />
+            </div>
           </div>
-          <div className="card-content">
-            <h3>Fantasy Project</h3>
-            <p>Description of the Fantasy Project</p>
-          </div>
-        </div>
-          <div className="card-image">
-            <img src={reactors} alt="Fantasy Project" />
-          </div>
-          <div className="card-content">
-            <h3>Fantasy Project</h3>
-            <p>Description of the Fantasy Project</p>
-          </div>
-        </div>
-        <div className="project-card">
-          <div className="card-image">
-            <img src={fantasy} alt="Fantasy Project" />
-          </div>
-          <div className="card-content">
-            <h3>Fantasy Project</h3>
-            <p>Description of the Fantasy Project</p>
-          </div>
-        </div>
-        <div className="project-card">
-          <div className="card-image">
-            <img src={matchup} alt="Fantasy Project" />
-          </div>
-          <div className="card-content">
-            <h3>Fantasy Project</h3>
-            <p>Description of the Fantasy Project</p>
-          </div>
-          <div className="project-card">
-          <div className="card-image">
-            <img src={frimark} alt="Fantasy Project" />
-          </div>
-          <div className="card-content">
-            <h3>Fantasy Project</h3>
-            <p>Description of the Fantasy Project</p>
-          </div>
-        </div>
-        </div>
-       
-
-        {/* Add more project cards as needed */}
+        ))}
       </div>
     </div>
   );
