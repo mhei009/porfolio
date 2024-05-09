@@ -55,8 +55,9 @@ const Projects = () => {
   };
 
   return (
-    <div className="projects">
-      <h2 className='text-3xl font-bold mb-5 mt-4'>Previous Projects</h2>
+    <div id="projects" className="projects">
+      <h2 className='text-3xl font-bold mb-5 mt-4' style={{ fontFamily: "Montserrat" }}>Previous Projects</h2>
+
       <p className='projects__p'>So far projects I have done during my education</p>
       <div className="projects-list">
         {projectData.map((project, index) => (
@@ -66,7 +67,7 @@ const Projects = () => {
               <p className='project__description'>
                 {project.description}
                 <br />
-                <strong className="tech-stack-label">Tech Stack:</strong> 
+                <strong className="tech-stack-label mt-4">Tech Stack:</strong> 
                 <ul className="tech-stack-list">
                   {project.techStack.map((tech, index) => (
                     <li key={index} className="tech-stack-item">{tech}</li>

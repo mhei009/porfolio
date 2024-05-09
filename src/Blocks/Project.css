@@ -4,15 +4,19 @@
 }
 
 .projects_h2 {
+  font-family: "montserrat";
 }
 
 .project__title {
   font-size: x-large;
   margin-bottom: 0, 5rem;
+  font-weight: 600;
+  font-family: "montserrat";
 }
 
 .projects__p {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
+  font-size: larger;
 }
 
 .projects-list {
@@ -36,7 +40,7 @@
 }
 
 .project__description {
-  flex: 1; /* Take remaining space */
+  margin-top: 0.5rem;
 }
 
 .card-image {
