@@ -1,7 +1,17 @@
 [
+{
+  "title": "Royal Swedish Sailing Society History / KSSS Historia",
+    "description": "History website for our client the Royal Swedish Sailing Society.  crafted in collaboration with the innovative minds of Hyper Island's UX/UI students.  First project using Next.js and a headless CMS called Sanity.io ",
+    "image": "images/ksss.png",
+    "codeLink": "https://github.com/yourusername/reactors",
+    "liveSiteLink": "https://reactors.yourdomain.com",
+    "techStack": ["Next.js", "CSS", "Sanity", "Tailwind" ]
+
+},
+
   {
     "title": "Tick",
-    "description": "Integrated backend into our todo list project. Built on REST principles and HTTP Protocol best practices with integrated database support. Robust user authentication system. CI/CD pipelines automate testing and deployment. Made with detailed queries to tailored authentication mechanisms.",
+    "description": "Integrated backend into our todo list project. Built on REST principles and HTTP Protocol best practices with integrated database support, user authentication system. CI/CD pipelines automate testing and deployment. Made with detailed queries to tailored authentication mechanisms.",
     "image": "images/todo.png",
     "codeLink": "https://github.com/yourusername/tick",
     "liveSiteLink": "https://tick.yourdomain.com",
@@ -10,7 +20,7 @@
   },
   {
     "title": "Reactors Project",
-    "description": "Description of the Reactors Project",
+    "description": "First react project. Tailored specifically for tech professionals, our platform matches your skills and preferences with seasonal job opportunities in your desired locations. ",
     "image": "images/reactors.png",
     "codeLink": "https://github.com/yourusername/reactors",
     "liveSiteLink": "https://reactors.yourdomain.com",
@@ -18,7 +28,7 @@
   },
   {
     "title": "Fantasy Project",
-    "description": "Description of the Fantasy Project",
+    "description": "A 90´s inspired website. First project for the the introduction of HTML and CSS",
     "image": "images/fantasy.png",
     "codeLink": "https://github.com/yourusername/fantasy",
     "liveSiteLink": "https://fantasy.yourdomain.com",
@@ -26,7 +36,7 @@
   },
   {
     "title": "Matchup Project",
-    "description": "Description of the Matchup Project",
+    "description": "A art image matchup game, a project born from the Fundamentals of JavaScript. Explore masterpieces sourced from the Art Gallery of Chicago via our API integration. ",
     "image": "images/matchup.png",
     "codeLink": "https://github.com/yourusername/matchup",
     "liveSiteLink": "https://matchup.yourdomain.com",
@@ -34,7 +44,7 @@
   },
   {
     "title": "Frimark Project",
-    "description": "Description of the Frimark Project",
+    "description": " A e-commerce website is the culmination of an intensive SEO project, ensuring optimal visibility and accessibility. ",
     "image": "images/frimark.png",
     "codeLink": "https://github.com/yourusername/frimark",
     "liveSiteLink": "https://frimark.yourdomain.com",

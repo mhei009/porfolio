@@ -25,3 +25,7 @@ body {
   --red: #8e1010;
   --blue: #004d9e;
 }
+
+.h2 {
+  font-family: "alta_regular";
+}

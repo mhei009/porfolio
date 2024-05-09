@@ -5,6 +5,7 @@ import reactorsImage from '../Assets/images/reactors.png';
 import fantasyImage from '../Assets/images/fantasy.png';
 import matchupImage from '../Assets/images/matchup.png';
 import frimarkImage from '../Assets/images/frimark.png';
+import KSSSimage from '../Assets/images/KSSS.png'
 
 import '../index.css';
 
@@ -32,10 +33,12 @@ const Projects = () => {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, []); 
 
   const getImage = (title) => {
     switch (title) {
+      case 'Royal Swedish Sailing Society History / KSSS Historia':
+        return KSSSimage;
       case 'Tick':
         return todoImage;
       case 'Reactors Project':

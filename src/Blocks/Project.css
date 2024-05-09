@@ -1,7 +1,6 @@
 .projects {
   background-color: var(--white);
   padding: 7rem;
-  margin-top: 7.7rem;
 }
 
 .projects_h2 {
@@ -29,11 +28,11 @@
 }
 
 .project-card:nth-child(even) {
-  flex-direction: row-reverse; /* Reverse the flex direction for even-numbered cards */
+  flex-direction: row-reverse;
 }
 
 .project-card:nth-child(odd) {
-  flex-direction: row; /* Default flex direction for odd-numbered cards */
+  flex-direction: row;
 }
 
 .project__description {
@@ -62,21 +61,22 @@
 }
 
 .tech-stack-list {
-  list-style: none; /* Remove bullet points */
+  list-style: none;
   padding: 0;
   margin-top: 0.5rem;
+  font-size: small;
 }
 
 .tech-stack-item {
   display: inline-block;
-  margin-right: 0.5rem; /* Add spacing between tech stack items */
+  margin-right: 0.5rem;
   padding: 0.3rem 0.5rem;
-  background-color: #eaeaeaa5; /* Customize the background color */
+  background-color: #eaeaeaa5;
   border-radius: 3px;
   margin-bottom: 1.3rem;
 }
 
-/* Define the animation */
+/* animation */
 @keyframes fadeInAnimation {
   from {
     opacity: 0;
@@ -88,7 +88,6 @@
   }
 }
 
-/* transitions for fade-in and fade-out */
 .project-card {
   opacity: 0.2;
   transition: opacity 0.5s ease-in-out;

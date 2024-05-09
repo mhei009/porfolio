@@ -2,8 +2,6 @@
   background-color: var(--gray);
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  padding: 3rem;
   background-color: var(--white);
   min-height: 96vh;
   padding: 7rem;
@@ -11,13 +9,14 @@
 
 .hero {
   width: 35%;
+  margin-left: 4rem;
 }
 
 .landingpage__content {
   flex-direction: column;
   justify-content: center;
   align-self: center;
-  margin-top: -7rem;
+  margin-left: 7rem;
 }
 
 .landingpage__h2 {

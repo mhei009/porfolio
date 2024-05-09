@@ -1,6 +1,4 @@
-import React, { useEffect } from 'react';
-import lottie from 'lottie-web';
-import animationData from '../Animation - 1714858866071.json'; 
+import React from 'react';
 import { ReactComponent as HtmlIcon } from '../Assets/Icons/html-5-logo-svgrepo-com.svg';
 import { ReactComponent as CssIcon } from '../Assets/Icons/css-3-svgrepo-com.svg';
 import { ReactComponent as JsIcon } from '../Assets/Icons/javascript-svgrepo-com.svg';
@@ -13,48 +11,31 @@ import { ReactComponent as ShadcnIcon } from '../Assets/shadcn-ui-seeklogo.svg';
 import '../index.css';
 
 function Skills() {
-    useEffect(() => {
-        lottie.loadAnimation({
-            container: document.getElementById('animation-container'),
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            animationData: animationData // Your animation JSON object
-        });
-    }, []); 
-  
-
     const skillsList = [
-        { name: 'HTML', icon: <HtmlIcon className='icon' />, progress: 85 },
-        { name: 'CSS', icon: <CssIcon className='icon' />, progress: 80 },
-        { name: 'JavaScript', icon: <JsIcon className='icon javascript' />, progress: 80 },
-        { name: 'React', icon: <ReactIcon className='icon' />, progress: 75 },
-        { name: 'Next.js', icon: <NextIcon className='icon' />, progress: 50 },
-        { name: 'Tailwind', icon: <TailwindIcon className='icon' />, progress: 50 },
-        { name: 'Shadcn/ui', icon: <ShadcnIcon className='icon' />, progress: 40 },
-        { name: 'Figma', icon: <FigmaIcon className='icon' />, progress: 50 },
-        { name: 'Adobe Photoshop', icon: <AdobeIcon className='icon' />, progress: 70 },
+        { name: 'HTML', icon: <HtmlIcon className='icon' /> },
+        { name: 'CSS', icon: <CssIcon className='icon' /> },
+        { name: 'JavaScript', icon: <JsIcon className='icon javascript' /> },
+        { name: 'React', icon: <ReactIcon className='icon' /> },
+        { name: 'Next.js', icon: <NextIcon className='icon' /> },
+        { name: 'Tailwind', icon: <TailwindIcon className='icon' /> },
+        { name: 'Shadcn/ui', icon: <ShadcnIcon className='icon' /> },
+        { name: 'Figma', icon: <FigmaIcon className='icon' /> },
+        { name: 'Adobe Photoshop', icon: <AdobeIcon className='icon' /> },
     ];
 
     return (
-      <div className='skills'>
-        <div className="skills__container">
-            <h2 className='text-3xl font-bold mb-5 mt-4'>Tech Stack</h2>
-            <ul className='skill-list'>
-                {skillsList.map((skill, index) => (
-                    <li className="skill-item" key={index}>
-                        {skill.icon}
-                        <span>{skill.name}</span>
-                        <div className="progress-bar">
-                            <div className="progress" style={{ '--progress-percentage': `${skill.progress}%` }} >
-                            <div id="animation-container" className="animation-container">
-                            </div>
-                            </div>
-                        </div>
-                    </li>
-                ))}
-            </ul>
-        </div></div>
+        <div className='skills'>
+            <div className="skills__container">
+                <h2>Tech Stack</h2>
+                <ul className='skill-list'>
+                    {skillsList.map((skill, index) => (
+                        <li className="skill-item" key={index}>
+                            {skill.icon}
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </div>
     );
 }
 
