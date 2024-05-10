@@ -37,16 +37,17 @@ const LandingPage = () => {
         </video>
 
         <div className='landingpage__content'>  
-          <div className='header__container' style={{ backgroundColor: 'var(--white)', display: 'flex' }}>   
-            <h1 className='header__h1' style={{ fontFamily: 'alta_regular', color: 'black', fontSize: '4rem', fontWeight: 500 }}>Heidi Espiritu</h1>
-            <div className='header__small' style={{ width: '25rem', backgroundColor: 'white', textAlign: 'center', position: 'relative', top: '-1.2rem' }}><p className='header__p' style={{ fontSize: 'medium', fontFamily: 'montserrat' }}><span>☙ ⌗Front-end developer ❧</span></p></div>
+          <div className='header__container'>   
+            <h1 className='header__h1'>Heidi Espiritu</h1>
+            <div className='header__small'><p className='header__p'><span>☙ ⌗Front-end developer ❧</span></p></div>
           </div>
+          <div className='introduction'>
           <h2 className='landingpage__h2'>Based in Stockholm, Sweden. </h2>
           <p className='landingpage__p'>I'm all about creating captivating web experiences and exploring the endless possibilities of technology.</p>
           <p className='landingpage__p'>Let's connect and collaborate on something amazing!</p>
-          
+          </div>
 
-          <div className="contact-links rounded-lg w-3/4">
+          
             <ul className='contact-container'>
               <li className='icon-container'>
                 <a className='link-container' href="mailto:emhp009@gmail.com">
@@ -66,24 +67,21 @@ const LandingPage = () => {
                   <p className='contact-text'>LinkedIn</p>
                 </a>
               </li>
-            </ul> 
-            <section className="skills__container">
-        <h3 className='landingpage__h3' style={{ fontSize: 'medium', fontFamily: 'montserrat' }}>Tech Stack skills</h3>
-        <ul className='skill-list'>
-          {skillsList.map((skill, index) => (
-            <li className="skill-item" key={index}>
-              {skill.icon}
-            </li>
-          ))}
-        </ul>
+            </ul>  <div className="skills__container">
+              <h3 className='landingpage__h3'>Tech Stack skills</h3>
+              <ul className='skill-list'>
+                {skillsList.map((skill, index) => (
+                  <li className="skill-item" key={index}>
+                    {skill.icon}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            </div>
+           
+        
+   
       </section>
-          </div>
-        </div>
-  
-      </section>
-      
-
-     
     </>
   );
 };

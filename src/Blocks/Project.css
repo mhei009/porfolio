@@ -1,62 +1,59 @@
 .projects {
   background-color: var(--white);
-  padding: 7rem;
+  padding: 3rem 1rem; /* Reduce padding for smaller screens */
 }
 
-.projects_h2 {
+.projects__h2 {
   font-family: "montserrat";
 }
 
 .project__title {
-  font-size: x-large;
-  margin-bottom: 0, 5rem;
-  font-weight: 600;
-  font-family: "montserrat";
+  font-size: 1.2rem; /* Adjust font size for smaller screens */
+  margin-bottom: 0.5rem;
 }
 
 .projects__p {
-  margin-bottom: 5rem;
-  font-size: larger;
+  margin-bottom: 2rem; /* Reduce margin for smaller screens */
+  font-size: 1rem; /* Adjust font size for smaller screens */
 }
 
 .projects-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* Center projects horizontally */
 }
 
 .project-card {
   display: flex;
-  align-items: center;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center content horizontally */
   width: 100%;
-  margin-bottom: 10rem;
-}
-
-.project-card:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-.project-card:nth-child(odd) {
-  flex-direction: row;
-}
-
-.project__description {
-  margin-top: 0.5rem;
+  margin-bottom: 2rem; /* Adjust margin for spacing */
 }
 
 .card-image {
-  width: 50%;
-  box-shadow: 1rem 0.7rem 10px rgb(0 0 0 / 0.2);
+  width: 100%;
+  max-width: 300px; /* Limit image width */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Add shadow */
 }
 
 .card-content {
-  bottom: 0;
-  left: 0;
-  right: 5rem;
   background-color: rgba(228, 167, 75, 0.9);
-  padding: 10px;
-  width: 40%;
   padding: 1rem;
-  box-shadow: 0 0.7rem 10px rgb(0 0 0 / 0.2);
+  width: 100%;
+  max-width: 300px; /* Limit content width */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.project__description {
+  font-size: 1rem;
+  margin-top: 1rem; /* Add margin between title and description */
+}
+
+.tech-stack-list {
+  list-style: none;
+  padding: 0;
+  font-size: small;
 }
 
 .tech-stack-label {
@@ -64,39 +61,125 @@
   color: #333;
 }
 
-.tech-stack-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 0.5rem;
-  font-size: small;
-}
-
 .tech-stack-item {
   display: inline-block;
   margin-right: 0.5rem;
-  padding: 0.3rem 0.5rem;
+  padding: 0.2rem 0.3rem;
   background-color: #eaeaeaa5;
   border-radius: 3px;
-  margin-bottom: 1.3rem;
+  margin-bottom: 0.8rem;
+  margin-top: 0.6rem;
 }
 
-/* animation */
-@keyframes fadeInAnimation {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+.read-more-button {
+  color: var(--red);
+  font-weight: 800;
+}
+
+@media only screen and (min-width: 768px) {
+  .projects {
+    background-color: var(--white);
+    padding: 7rem;
   }
-  to {
+
+  .projects_h2 {
+    font-family: "montserrat";
+  }
+
+  .project__title {
+    font-size: x-large;
+    margin-bottom: 0, 5rem;
+    font-weight: 600;
+    font-family: "montserrat";
+  }
+
+  .projects__p {
+    margin-bottom: 5rem;
+    font-size: larger;
+  }
+
+  .projects-list {
+    display: flex;
+  }
+
+  .project-card {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+
+  .project-card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .project-card:nth-child(odd) {
+    flex-direction: row;
+  }
+
+  .project__description {
+    margin-top: 0.5rem;
+  }
+
+  .card-image {
+    width: 100%;
+    height: auto;
+    max-width: 50rem; /* Adjust the max-width as needed */
+  }
+
+  .card-content {
+    bottom: 0;
+    left: 0;
+    right: 5rem;
+    min-width: 45rem;
+    background-color: rgba(228, 167, 75, 0.9);
+    padding: 1rem;
+    box-shadow: 0 0.7rem 10px rgb(0 0 0 / 0.2);
+  }
+
+  .tech-stack-label {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .tech-stack-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 0.5rem;
+    font-size: small;
+  }
+
+  .tech-stack-item {
+    display: inline-block;
+    margin-right: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    background-color: #eaeaeaa5;
+    border-radius: 3px;
+    margin-bottom: 1.3rem;
+  }
+
+  /* animation */
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+      filter: blur(4px);
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateY(0);
+    }
+  }
+
+  /* Apply the fade-in animation to project cards */
+  .project-card {
+    opacity: 0.2;
+    filter: blur(2px);
+    transition: opacity 0.2s ease-in-out, filter 0.2s ease-in-out;
+  }
+
+  .fade-in {
     opacity: 1;
-    transform: translateY(0);
+    filter: blur(0);
   }
-}
-
-.project-card {
-  opacity: 0.2;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.fade-in {
-  opacity: 1;
 }

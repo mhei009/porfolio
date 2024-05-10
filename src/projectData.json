@@ -35,9 +35,9 @@
     "techStack": ["HTML", "CSS", "Javascript"  ]
   },
   {
-    "title": "Art Quize",
+    "title": "ArtQuize",
     "description": "A art image matchup game, a project born from the Fundamentals of JavaScript. Explore masterpieces sourced from the Art Gallery of Chicago via our API integration. ",
-    "image": "images/matchup.png",
+    "image": "images/ArtQuize.png",
     "codeLink": "https://github.com/mhei009/art-quize-main-heidi-version.git",
     "liveSiteLink": "https://artquize.netlify.app",
     "techStack": ["HTML", "CSS", "Javascript" ]
