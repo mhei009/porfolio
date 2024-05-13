@@ -1,0 +1,41 @@
+/* Contact.css */
+.contact-container {
+  display: flex;
+  list-style: none;
+}
+
+.footer__h1 {
+  font-size: larger;
+  font-weight: 600;
+}
+
+.icon-container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.contact-icon {
+  width: 5rem;
+  height: 2.5rem;
+}
+
+.contact-text {
+  margin: 0;
+  font-size: 0.8em;
+  color: #333;
+}
+
+.contact-icon:hover {
+  filter: invert(20%) sepia(86%) saturate(590%) hue-rotate(352deg)
+    brightness(97%) contrast(93%);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--yellow);
+}

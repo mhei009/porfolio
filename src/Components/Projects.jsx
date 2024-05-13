@@ -3,10 +3,8 @@ import projectData from '../projectData.json';
 import todoImage from '../Assets/images/todo.png'; 
 import reactorsImage from '../Assets/images/reactors.png';
 import fantasyImage from '../Assets/images/fantasy.png';
-import ArtQuizeImage from '../Assets/images/matchup.png';
 import frimarkImage from '../Assets/images/frimark.png';
 import KSSSimage from '../Assets/images/KSSS.png';
-
 import '../index.css';
 
 const Projects = () => {
@@ -21,8 +19,8 @@ const Projects = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(handleIntersection, {
       root: null,
-      rootMargin: '0px',
-      threshold: 0.5,
+      rootMargin: '10px',
+      threshold: 0.7, // Adjust the threshold value
     });
 
     document.querySelectorAll('.project-card').forEach((card, index) => {
@@ -56,8 +54,6 @@ const Projects = () => {
         return reactorsImage;
       case 'Fantasy Project':
         return fantasyImage;
-      case 'Art Quize Project':
-        return ArtQuizeImage;
       case 'Frimark Project':
         return frimarkImage;
       default:

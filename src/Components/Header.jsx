@@ -8,7 +8,7 @@ const Header = () => {
       <nav className="max-w-screen-xl px-3 mx-auto">
         <ul className="flex flex-row font-medium space-x-8 text-lg mx-auto justify-center">
           <li>  
-            <a href="#home" className={`text-gray-900 hover:underline ${selected === "home" ? "underline" : ""}`} onClick={() => setSelected("home")}>Home</a>
+            <a href="#landingpage" className={`text-gray-900 hover:underline ${selected === "home" ? "underline" : ""}`} onClick={() => setSelected("home")}>Home</a>
           </li>
           <li>
             <a href="#aboutme" className={`text-gray-900 hover:underline ${selected === "aboutme" ? "underline" : ""}`} onClick={() => setSelected("aboutme")}>About Me</a>

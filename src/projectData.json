@@ -18,14 +18,7 @@
     "techStack": ["React", "Node.js", "PostGres", "Tailwind" ]
     
   },
-  {
-    "title": "Reactors Project",
-    "description": "First react project. Tailored specifically for tech professionals, our platform matches your skills and preferences with seasonal job opportunities in your desired locations. ",
-    "image": "images/reactors.png",
-    "codeLink": "https://github.com/Minimoocodes/the-reactors.git",
-    "liveSiteLink": "https://thereactorsjob.netlify.app",
-    "techStack": ["React", "CSS" ]
-  },
+
   {
     "title": "Fantasy Project",
     "description": "A 90´s inspired website. First project for the the introduction of HTML and CSS",
@@ -34,14 +27,7 @@
     "liveSiteLink": "https://ffviii-project-ragnarok.netlify.app",
     "techStack": ["HTML", "CSS", "Javascript"  ]
   },
-  {
-    "title": "ArtQuize",
-    "description": "A art image matchup game, a project born from the Fundamentals of JavaScript. Explore masterpieces sourced from the Art Gallery of Chicago via our API integration. ",
-    "image": "images/ArtQuize.png",
-    "codeLink": "https://github.com/mhei009/art-quize-main-heidi-version.git",
-    "liveSiteLink": "https://artquize.netlify.app",
-    "techStack": ["HTML", "CSS", "Javascript" ]
-  },
+  
   {
     "title": "Frimark Project",
     "description": " A e-commerce website is the culmination of an intensive SEO project, ensuring optimal visibility and accessibility. ",

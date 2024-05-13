@@ -130,7 +130,7 @@
     bottom: 0;
     left: 0;
     right: 5rem;
-    min-width: 45rem;
+    min-width: 35rem;
     background-color: rgba(228, 167, 75, 0.9);
     padding: 1rem;
     box-shadow: 0 0.7rem 10px rgb(0 0 0 / 0.2);
@@ -171,7 +171,6 @@
     }
   }
 
-  /* Apply the fade-in animation to project cards */
   .project-card {
     opacity: 0.2;
     filter: blur(2px);
