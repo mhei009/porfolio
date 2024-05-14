@@ -2,6 +2,7 @@
 .contact-container {
   display: flex;
   list-style: none;
+  gap: 1rem;
 }
 
 .footer__h1 {
@@ -15,7 +16,7 @@
 }
 
 .contact-icon {
-  width: 5rem;
+  width: 3rem;
   height: 2.5rem;
 }
 

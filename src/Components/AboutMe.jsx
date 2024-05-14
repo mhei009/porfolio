@@ -1,37 +1,75 @@
 import React from 'react';
+import { ReactComponent as HtmlIcon } from '../Assets/Icons/html-5-logo-svgrepo-com.svg';
+import { ReactComponent as CssIcon } from '../Assets/Icons/css-3-svgrepo-com.svg';
+import { ReactComponent as JsIcon } from '../Assets/Icons/javascript-svgrepo-com.svg';
+import { ReactComponent as ReactIcon } from '../Assets/Icons/react-svgrepo-com.svg';
+import { ReactComponent as TailwindIcon } from '../Assets/Icons/tailwind-svgrepo-com.svg';
+import { ReactComponent as FigmaIcon } from '../Assets/Icons/figma-svgrepo-com.svg';
+import { ReactComponent as AdobeIcon } from '../Assets/Icons/adobe-photoshop-svgrepo-com.svg';
+import { ReactComponent as NextIcon } from '../Assets/next.svg';
+import { ReactComponent as ShadcnIcon } from '../Assets/shadcn-ui-seeklogo.svg';
 import '../index.css'; 
 
+
 function AboutMe() {
+
+  const skillsList = [
+    { name: 'HTML', icon: <HtmlIcon className='icon' /> },
+    { name: 'CSS', icon: <CssIcon className='icon' /> },
+    { name: 'JavaScript', icon: <JsIcon className='icon javascript' /> },
+    { name: 'React', icon: <ReactIcon className='icon' /> },
+    { name: 'Next.js', icon: <NextIcon className='icon' /> },
+    { name: 'Tailwind', icon: <TailwindIcon className='icon' /> },
+    { name: 'Shadcn/ui', icon: <ShadcnIcon className='icon' /> },
+    { name: 'Figma', icon: <FigmaIcon className='icon' /> },
+    { name: 'Adobe Photoshop', icon: <AdobeIcon className='icon' /> },
+  ];
+
   return (
-    <>  
-      <div id="aboutme" className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
-        <div className="w-full mx-auto max-w-screen-lg px-4">
-          <div className="group grid w-full grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="text-center md:text-left">
-              <p className="mb-4 font-semibold text-2xl text-grey">
-                Hello! I'm Heidi Espiritu, an aspiring Frontend Developer with a passion for creating engaging and user-friendly web experiences.  I'm constantly expanding my skills in modern frontend technologies.
-              </p>
-              <p className="mb-6 text-lg text-grey">
-                I believe in the power of technology to transform ideas into reality and am enthusiastic about contributing to innovative projects that make a positive impact. With a keen eye for design and a dedication to clean, efficient code, I strive to craft websites that not only look great but also deliver exceptional functionality.
-              </p>
-              <h3 className="mb-6 text-lg text-grey">
-                Outside of coding, I enjoy exploring the latest trends in web development and photography. I’m excited about the opportunities to learn more and look forward to leveraging my skills to build the next generation of web experiences.
-              </h3>
-            </div>
-            <div className="flex justify-center items-center">
-              <iframe 
-                src="https://lottie.host/embed/91187e3e-b098-4418-b328-7461e120cd1e/ryhfdZCdwg.json" 
-                title="Lottie Animation"
-                width="300" 
-                height="300"
-                frameBorder="0"
-                allowFullScreen
-              />
-            </div>
+    <div id="aboutme" className="relative min-h-screen  py-6 sm:py-12">
+      <div className="w-full mx-auto max-w-screen-lg px-4 relative z-1">
+        <div className="group grid w-full grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="text-center md:text-left mt-20">
+            <p className="mb-4 font-semibold text-2xl text-grey">
+              Hello! I'm Heidi a Frontend Developer student from Hyper Island Stockholm. I have a passion for creating engaging and user-friendly web experiences.  I'm constantly expanding my skills in modern frontend technologies.
+            </p>
+            <p className="mb-6 text-lg text-grey">
+              The power of technology has always amazed me since I was little. The idea to transform my ideas into reality  is a thrilling journey filled with creativity, learning challenges, and fulfillment. 
+            </p>
+            <h3 className="mb-6 text-lg text-grey">
+              Outside of coding, I enjoy playing sports, console games, and photography. I’m excited about the opportunities to learn more and look forward to leveraging my skills to build the next generation of web experiences.
+            </h3>
           </div>
-        </div>
+          
+        </div><div className="skills__container">
+            <h3 className='landingpage__h3'>Tech Stack skills</h3>
+            <ul className='skill-list'>
+              {skillsList.map((skill, index) => (
+                <li className="skill-item" key={index}>
+                  {skill.icon}
+                </li>
+              ))}
+            </ul>
+          </div>
       </div>
-    </>
+      <iframe 
+        src="https://lottie.host/embed/12832fd4-9090-49dd-964a-3324b716d807/4eYHtT3ayt.json"
+        className="absolute inset-0 z-0 w-screen h-screen pointer-events-none"
+        style={{ pointerEvents: 'none', border: 'none', zIndex: -1, animation: 'repeat-animation 13s linear infinite' }}
+      ></iframe>
+      <style>
+        {`
+          @keyframes repeat-animation {
+            0% {
+              transform: translate(0, 0);
+            }
+            100% {
+              transform: translate(-100%, -100%);
+            }
+          }
+        `}
+      </style>
+    </div>
   );
 }
 

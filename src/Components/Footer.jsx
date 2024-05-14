@@ -1,7 +1,7 @@
 import React from 'react';
-import GithubIcon from '../Assets/Icons/github-svgrepo-com.svg';
-import LinkedinIcon from '../Assets/Icons/linkedin-svgrepo-com.svg';
-import EmailIcon from '../Assets/Icons/email-message-svgrepo-com.svg';
+import GithubIcon from '../Assets/Icons/iconmonstr-github-3.svg';
+import LinkedinIcon from '../Assets/Icons/iconmonstr-linkedin-3.svg';
+import EmailIcon from '../Assets/Icons/iconmonstr-email-15.svg';
 import '../index.css'; 
 
 const Footer = () => {

@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 
+
 const Header = () => {
   const [selected, setSelected] = useState(""); 
 
   return (
-    <div className="fixed top-0 w-full z-10 bg-gray-50 py-3">
+    <div className="header">
       <nav className="max-w-screen-xl px-3 mx-auto">
-        <ul className="flex flex-row font-medium space-x-8 text-lg mx-auto justify-center">
+        <ul className="flex flex-row font-medium space-x-8 text-xl mx-auto justify-center">
           <li>  
             <a href="#landingpage" className={`text-gray-900 hover:underline ${selected === "home" ? "underline" : ""}`} onClick={() => setSelected("home")}>Home</a>
           </li>

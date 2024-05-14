@@ -1,5 +1,16 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: rem;
+  z-index: 10;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: var(--yellow);
+}
+
 .header__container {
-  background-color: var(--gray);
+  background-color: var(--yellow);
   display: flex;
   justify-content: center;
   flex-direction: column;
