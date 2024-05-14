@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import video from "../Assets/white.mp4";
-
 import '../index.css'; 
 
-
 const LandingPage = () => {
-  
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
 
   return (
     <>
-      <section id='landingpage' className="landingpage__container">
+      <section id='landingpage' className={`landingpage__container ${loaded ? 'fadeInAnimation' : ''}`}>
         <video autoPlay muted loop className="hero">
           <source src={video} type="video/mp4" />
         </video>
@@ -28,10 +30,8 @@ const LandingPage = () => {
             <p className='landingpage__p'>
               I'm all about creating captivating web experiences and exploring the endless possibilities of technology.
             </p>
-          
           </div>
         </div>
-        
       </section>
     </>
   );

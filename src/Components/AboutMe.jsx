@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import { motion, useAnimation } from 'framer-motion';
 import { ReactComponent as HtmlIcon } from '../Assets/Icons/html-5-logo-svgrepo-com.svg';
 import { ReactComponent as CssIcon } from '../Assets/Icons/css-3-svgrepo-com.svg';
 import { ReactComponent as JsIcon } from '../Assets/Icons/javascript-svgrepo-com.svg';
@@ -10,8 +11,36 @@ import { ReactComponent as NextIcon } from '../Assets/next.svg';
 import { ReactComponent as ShadcnIcon } from '../Assets/shadcn-ui-seeklogo.svg';
 import '../index.css'; 
 
-
 function AboutMe() {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef();
+  const controls = useAnimation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const top = ref.current.getBoundingClientRect().top;
+      const bottom = ref.current.getBoundingClientRect().bottom;
+      const { innerHeight } = window;
+
+      // Calculate if the section is in the middle of the viewport
+      const isInMiddle = top < innerHeight / 2 && bottom > innerHeight / 2;
+
+      setIsVisible(isInMiddle);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (isVisible) {
+      controls.start({
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.5 },
+      });
+    }
+  }, [isVisible, controls]);
 
   const skillsList = [
     { name: 'HTML', icon: <HtmlIcon className='icon' /> },
@@ -26,8 +55,16 @@ function AboutMe() {
   ];
 
   return (
-    <div id="aboutme" className="relative min-h-screen  py-6 sm:py-12">
-      <div className="w-full mx-auto max-w-screen-lg px-4 relative z-1">
+    <div 
+      ref={ref}
+      id="aboutme" 
+      className="relative min-h-screen  py-6 sm:py-12"
+    >
+      <motion.div
+        animate={controls}
+        initial={{ opacity: 0, y: 50 }}
+        className="w-full mx-auto max-w-screen-lg px-4 relative z-1"
+      >
         <div className="group grid w-full grid-cols-1 md:grid-cols-2 gap-8">
           <div className="text-center md:text-left mt-20">
             <p className="mb-4 font-semibold text-2xl text-grey">
@@ -40,18 +77,18 @@ function AboutMe() {
               Outside of coding, I enjoy playing sports, console games, and photography. I’m excited about the opportunities to learn more and look forward to leveraging my skills to build the next generation of web experiences.
             </h3>
           </div>
-          
-        </div><div className="skills__container">
-            <h3 className='landingpage__h3'>Tech Stack skills</h3>
-            <ul className='skill-list'>
-              {skillsList.map((skill, index) => (
-                <li className="skill-item" key={index}>
-                  {skill.icon}
-                </li>
-              ))}
-            </ul>
-          </div>
-      </div>
+        </div>
+        <div className="skills__container">
+          <h3 className='landingpage__h3'>Tech Stack skills</h3>
+          <ul className='skill-list'>
+            {skillsList.map((skill, index) => (
+              <li className="skill-item" key={index}>
+                {skill.icon}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </motion.div>
       <iframe 
         src="https://lottie.host/embed/12832fd4-9090-49dd-964a-3324b716d807/4eYHtT3ayt.json"
         className="absolute inset-0 z-0 w-screen h-screen pointer-events-none"
