@@ -12,7 +12,7 @@
   {
     "title": "Tick",
     "description": "Integrated backend into our todo list project. Built on REST principles and HTTP Protocol best practices with integrated database support, user authentication system. CI/CD pipelines automate testing and deployment. Made with detailed queries to tailored authentication mechanisms.",
-    "image": "images/todo.png",
+    "image": "images/todo.webp",
     "codeLink": "https://github.com/Hyper-Team-3/Todo-Group3.git",
     "liveSiteLink": "https://todo-group3-client.vercel.app",
     "techStack": ["React", "Node.js", "PostGres", "Tailwind" ]

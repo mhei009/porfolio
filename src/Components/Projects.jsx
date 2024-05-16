@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import projectData from '../projectData.json';
-import todoImage from '../Assets/images/todo.png'; 
+import todoImage from '../Assets/images/todo.webp'; 
 import reactorsImage from '../Assets/images/reactors.png';
 import fantasyImage from '../Assets/images/fantasy.png';
 import frimarkImage from '../Assets/images/frimark.png';
