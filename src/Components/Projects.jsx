@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 import projectData from '../projectData.json';
 import todoImage from '../Assets/images/todo.png'; 
 import reactorsImage from '../Assets/images/reactors.png';
@@ -11,6 +12,7 @@ const Projects = () => {
   const [visibleIndex, setVisibleIndex] = useState(null);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [expandedDescriptions, setExpandedDescriptions] = useState({});
+  const projectCardsRef = useRef([]);
 
   const handleResize = () => {
     setScreenWidth(window.innerWidth);
@@ -20,11 +22,10 @@ const Projects = () => {
     const observer = new IntersectionObserver(handleIntersection, {
       root: null,
       rootMargin: '10px',
-      threshold: 0.7, // Adjust the threshold value
+      threshold: 0.7,
     });
 
-    document.querySelectorAll('.project-card').forEach((card, index) => {
-      card.setAttribute('data-index', index);
+    projectCardsRef.current.forEach((card, index) => {
       observer.observe(card);
     });
 
@@ -38,8 +39,14 @@ const Projects = () => {
 
   const handleIntersection = (entries, observer) => {
     entries.forEach((entry) => {
+      const index = parseInt(entry.target.getAttribute('data-index'));
       if (entry.isIntersecting) {
-        setVisibleIndex(parseInt(entry.target.getAttribute('data-index')));
+        setVisibleIndex(index);
+        
+        gsap.to(entry.target, { duration: 0.5, filter: 'blur(0px)' });
+      } else {
+        
+        gsap.to(entry.target, { duration: 0.5, filter: 'blur(10px)' });
       }
     });
   };
@@ -77,10 +84,14 @@ const Projects = () => {
       <h2 className="projects__h2 text-3xl font-bold mb-5 mt-4" style={{ fontFamily: "Montserrat" }}>
         Previous Projects
       </h2>
-      <p className="projects__p">So far projects I have done during my education</p>
+      <p className="projects__p">Projects completed during my education</p>
       <div className="projects-list">
         {projectData.map((project, index) => (
-          <div className={`project-card ${visibleIndex === index ? 'fade-in' : ''}`} key={index}>
+          <div
+            ref={(el) => (projectCardsRef.current[index] = el)}
+            className={`project-card ${visibleIndex === index ? 'fade-in' : ''}`}
+            key={index}
+          >
             <div className="card-image">
               <img src={getImage(project.title)} alt={project.title} />
             </div>
@@ -95,7 +106,7 @@ const Projects = () => {
                     className="read-more-button"
                     onClick={() => toggleDescription(index)}
                   >
-                    Read More
+                    {toggleDescriptionText(index)}
                   </button>
                 )}
               </p>
@@ -104,8 +115,8 @@ const Projects = () => {
                   <div className="project__tech-stack">
                     <strong className="tech-stack-label">Tech Stack:</strong>
                     <ul className="tech-stack-list">
-                      {project.techStack.map((tech, index) => (
-                        <li key={index} className="tech-stack-item">
+                      {project.techStack.map((tech, idx) => (
+                        <li key={idx} className="tech-stack-item">
                           {tech}
                         </li>
                       ))}
@@ -118,14 +129,6 @@ const Projects = () => {
                     <a href={project.liveSiteLink} className="button" target="_blank" rel="noopener noreferrer">
                       Live Site
                     </a>
-                    {(screenWidth < 768 && expandedDescriptions[index]) && (
-                      <button
-                        className="button" 
-                        onClick={() => toggleDescription(index)}
-                      >
-                        {toggleDescriptionText(index)}
-                      </button>
-                    )}
                   </div>
                 </>
               )}

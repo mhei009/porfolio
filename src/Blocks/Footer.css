@@ -1,8 +1,19 @@
-/* Contact.css */
 .footer {
   padding: 2rem;
   background-color: var(--yellow);
   text-align: center;
+  position: relative;
+}
+
+.footer__credits {
+  font-family: "alta_regular";
+  font-size: 1rem;
+  font-weight: 500;
+  position: absolute;
+  left: 0;
+  right: 0; /* Center the credits horizontally */
+  bottom: 1rem; /* Position the credits below the contact links */
+  margin: auto; /* Center horizontally */
 }
 
 .footer__title {
@@ -14,8 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  position: relative;
+  flex-direction: column; /* Stack items vertically */
 }
 
 .footer__contact-list {
@@ -32,12 +42,12 @@
 
 .footer__contact-link {
   display: inline-block;
-  margin-top: 2.4rem;
+  margin-top: 1.5rem;
 }
 
 .footer__contact-icon {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .footer__contact-icon:hover {
@@ -45,11 +55,59 @@
     brightness(97%) contrast(93%);
 }
 
-.footer__credits {
-  font-family: "alta_regular";
-  font-size: 2rem;
-  font-weight: 500;
-  position: absolute;
-  right: 0;
-  margin-top: 3rem;
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 2rem;
+    background-color: var(--yellow);
+    text-align: center;
+    position: relative;
+  }
+
+  .footer__title {
+    font-size: larger;
+    font-weight: 600;
+  }
+
+  .footer__content {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center;
+  }
+
+  .footer__contact-list {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* Center contact icons horizontally */
+  }
+
+  .footer__contact-item {
+    text-align: center;
+  }
+
+  .footer__contact-link {
+    display: inline-block;
+    margin-top: 2.4rem;
+  }
+
+  .footer__contact-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 0;
+  }
+
+  .footer__contact-icon:hover {
+    filter: invert(20%) sepia(86%) saturate(590%) hue-rotate(352deg)
+      brightness(97%) contrast(93%);
+  }
+
+  .footer__credits {
+    font-family: "alta_regular";
+    font-size: 2.3rem; /* Adjust font size for smaller screens */
+    font-weight: 500;
+    margin-left: 74rem; /* Push credits to the right */
+    margin-bottom: 0.6rem;
+  }
 }

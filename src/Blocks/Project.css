@@ -123,7 +123,8 @@
   .card-image {
     width: 100%;
     height: auto;
-    max-width: 50rem;
+    max-width: 45rem;
+    box-shadow: 0 0.9rem 10px rgb(0 0 0 / 0.2);
   }
 
   .card-content {
@@ -133,7 +134,7 @@
     min-width: 35rem;
     background-color: rgba(228, 167, 75, 0.9);
     padding: 1rem;
-    box-shadow: 0 0.7rem 10px rgb(0 0 0 / 0.2);
+    box-shadow: 0 0.9rem 10px rgb(0 0 0 / 0.2);
   }
 
   .tech-stack-label {
@@ -155,30 +156,5 @@
     background-color: #eaeaeaa5;
     border-radius: 3px;
     margin-bottom: 1.3rem;
-  }
-
-  /* animation */
-  @keyframes fadeInAnimation {
-    from {
-      opacity: 0;
-      filter: blur(4px);
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      filter: blur(0);
-      transform: translateY(0);
-    }
-  }
-
-  .project-card {
-    opacity: 0.2;
-    filter: blur(2px);
-    transition: opacity 0.2s ease-in-out, filter 0.2s ease-in-out;
-  }
-
-  .fade-in {
-    opacity: 1;
-    filter: blur(0);
   }
 }

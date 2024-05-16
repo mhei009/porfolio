@@ -77,7 +77,9 @@ function AboutMe() {
               Outside of coding, I enjoy playing sports, console games, and photography. I’m excited about the opportunities to learn more and look forward to leveraging my skills to build the next generation of web experiences.
             </h3>
           </div>
+          
         </div>
+        
         <div className="skills__container">
           <h3 className='landingpage__h3'>Tech Stack skills</h3>
           <ul className='skill-list'>
@@ -92,7 +94,7 @@ function AboutMe() {
       <iframe 
         src="https://lottie.host/embed/12832fd4-9090-49dd-964a-3324b716d807/4eYHtT3ayt.json"
         className="absolute inset-0 z-0 w-screen h-screen pointer-events-none"
-        style={{ pointerEvents: 'none', border: 'none', zIndex: -1, animation: 'repeat-animation 13s linear infinite' }}
+        style={{ pointerEvents: 'none', border: 'none', zIndex: -1, animation: 'repeat-animation 18s linear infinite' }}
       ></iframe>
       <style>
         {`
