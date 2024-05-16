@@ -113,7 +113,7 @@
   .footer__contact-item:hover .footer__contact-text {
     filter: invert(20%) sepia(86%) saturate(700%) hue-rotate(352deg)
       brightness(97%) contrast(93%);
-    transition: filter 0.3s; /* Add transition for smooth hover effect */
+    transition: filter 0.3s; 
   }
 
   .footer__credits {
