@@ -26,7 +26,7 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-        <div className="footer__credits">#Heidi Espiritu X Mhei ©2024</div>
+        <div className="footer__credits"><p className='footer_creditsp'>#Heidi Espiritu X Mhei ©2024</p></div>
       </div>
     </footer>
   );

@@ -66,8 +66,8 @@ function AboutMe() {
         className="w-full mx-auto max-w-screen-lg px-4 relative z-1"
       >
         <div className="group grid w-full grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="text-center md:text-left mt-20">
-            <p className="mb-4 font-semibold text-2xl text-grey">
+          <div className="text-center md:text-left mt-20 px-10">
+            <p className="mb-4 font-semibold text-lg text-grey">
               Hello! I'm Heidi a Frontend Developer student from Hyper Island Stockholm. I have a passion for creating engaging and user-friendly web experiences.  I'm constantly expanding my skills in modern frontend technologies.
             </p>
             <p className="mb-6 text-lg text-grey">

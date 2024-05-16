@@ -112,6 +112,16 @@
   margin-bottom: 1rem;
 }
 
+.scroll__down {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  width: 50px;
+  height: 15rem;
+  border: none;
+  z-index: 1000;
+}
+
 @media only screen and (min-width: 768px) {
   .landingpage__container {
     background-color: var(--gray);
@@ -182,11 +192,10 @@
     width: 70%; /* Adjust the width as needed */
   }
 
-  /* Styles for scroll__down iframe */
   .scroll__down {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 25px;
     width: 50px;
     height: 30rem;
     border: none;
