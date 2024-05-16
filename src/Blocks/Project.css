@@ -1,6 +1,6 @@
 .projects {
   background-color: var(--white);
-  padding: 3rem 1rem; /* Reduce padding for smaller screens */
+  padding: 3rem 1rem;
 }
 
 .projects__h2 {
@@ -8,41 +8,41 @@
 }
 
 .project__title {
-  font-size: 1.2rem; /* Adjust font size for smaller screens */
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
 .projects__p {
-  margin-bottom: 2rem; /* Reduce margin for smaller screens */
-  font-size: 1rem; /* Adjust font size for smaller screens */
+  margin-bottom: 2rem;
+  font-size: 1rem;
 }
 
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center projects horizontally */
+  justify-content: center;
 }
 
 .project-card {
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center; /* Center content horizontally */
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  margin-bottom: 2rem; /* Adjust margin for spacing */
+  margin-bottom: 2rem;
 }
 
 .card-image {
   width: 100%;
-  max-width: 300px; /* Limit image width */
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Add shadow */
+  max-width: 300px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .card-content {
   background-color: rgba(228, 167, 75, 0.9);
   padding: 1rem;
   width: 100%;
-  max-width: 300px; /* Limit content width */
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Add shadow */
+  max-width: 300px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .project__description {
@@ -123,7 +123,7 @@
   .card-image {
     width: 100%;
     height: auto;
-    max-width: 50rem; /* Adjust the max-width as needed */
+    max-width: 50rem;
   }
 
   .card-content {

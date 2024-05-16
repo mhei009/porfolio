@@ -22,7 +22,7 @@ function AboutMe() {
       const bottom = ref.current.getBoundingClientRect().bottom;
       const { innerHeight } = window;
 
-      // Calculate if the section is in the middle of the viewport
+      
       const isInMiddle = top < innerHeight / 2 && bottom > innerHeight / 2;
 
       setIsVisible(isInMiddle);

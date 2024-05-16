@@ -26,7 +26,7 @@ const LandingPage = () => {
             </div>
           </div>
           <div className='introduction'>
-            <h2 className='landingpage__h2'>Based in Stockholm, Sweden. </h2>
+            <h2 className='landingpage__h2'>Frontend student looking for a internship. Based in Stockholm, Sweden. </h2>
             <p className='landingpage__p'>
               I'm all about creating captivating web experiences and exploring the endless possibilities of technology.
             </p>
