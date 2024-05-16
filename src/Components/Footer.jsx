@@ -42,8 +42,8 @@ const Footer = () => {
           </li>
         </ul>
         <div className="footer__credits">
-          <p className='footer_creditsp'>#Heidi Espiritu X Mhei</p>
-          <p className='credit_small'>©2024</p>
+          <p className='footer_creditsp'>#Heidi Espiritu X Mhei ©2024</p>
+          
         </div>
       </div>
     </footer>
