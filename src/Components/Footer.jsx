@@ -8,7 +8,7 @@ import '../index.css';
 const Footer = () => {
   // Function to handle CV download
   const handleDownloadCV = () => {
-    window.open('https://drive.google.com/file/d/14izl5JV2b6bOtkds3HuqxONnY7jxq9kf/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1TJVXnNVZHc-Pxe4-jAyXlUpT5Ljja57o/view?usp=sharing', '_blank');
   };
 
   return (
