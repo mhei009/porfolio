@@ -23,7 +23,7 @@ const Footer = () => {
             <p className="footer__contact-text">CV</p>
           </li>
           <li className="footer__contact-item">
-            <a className="footer__contact-link" href="mailto:emhp009@gmail.com" aria-label="Email Heidi">
+            <a className="footer__contact-link" href="mailto:espiritumheidi@gmail.com" aria-label="Email Heidi">
               <img className="footer__contact-icon" src={EmailIcon} alt="Email Icon" />
             </a>
             <p className="footer__contact-text">Email</p>
