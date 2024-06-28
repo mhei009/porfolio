@@ -6,7 +6,7 @@ import CvIcon from '../Assets/Icons/iconmonstr-cv-3.svg';
 import '../index.css';
 
 const Footer = () => {
-  // Function to handle CV download
+ 
   const handleDownloadCV = () => {
     window.open('https://drive.google.com/file/d/1TJVXnNVZHc-Pxe4-jAyXlUpT5Ljja57o/view?usp=sharing', '_blank');
   };
