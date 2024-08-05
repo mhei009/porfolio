@@ -6,9 +6,9 @@ import CvIcon from '../Assets/Icons/iconmonstr-cv-3.svg';
 import '../index.css';
 
 const Footer = () => {
- 
+
   const handleDownloadCV = () => {
-    window.open('https://drive.google.com/file/d/1TJVXnNVZHc-Pxe4-jAyXlUpT5Ljja57o/view?usp=sharing', '_blank');
+    window.open('https://www.dropbox.com/scl/fi/tahj3u6esgum0phmxwrsp/emhp009-gmail.com-0739-869-834-Upplands-V-sby.-Stockholm-Sweden-reallygreatsite.com-10.pdf?rlkey=n1zlrcfu6ozf8zckxseuuf1q0&st=ukfxe6ol&dl=0', '_blank');
   };
 
   return (
@@ -38,12 +38,11 @@ const Footer = () => {
             <a className="footer__contact-link" href="https://www.linkedin.com/in/marieheidiespiritu/" aria-label="LinkedIn Profile">
               <img className="footer__contact-icon" src={LinkedinIcon} alt="LinkedIn Icon" />
             </a>
-            <p className="footer__contact-text">linkedin</p>
+            <p className="footer__contact-text">LinkedIn</p>
           </li>
         </ul>
         <div className="footer__credits">
-          <p className='footer_creditsp'>#Heidi Espiritu X Mhei ©2024</p>
-          
+          <p className="footer__credits-text">#Heidi Espiritu X Mhei ©2024</p>
         </div>
       </div>
     </footer>

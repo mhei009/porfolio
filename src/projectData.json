@@ -20,6 +20,15 @@
   },
 
   {
+  "title": "ArtQuize",
+  "description": "An art quiz for the basic fundamentals of JavaScript, utilizing the API from the Art Institute of Chicago.",
+  "image": "images/artquize.png",
+  "codeLink": "https://github.com/mhei009/art-quize",
+  "liveSiteLink": "https://artquize.netlify.app/",
+  "techStack": ["HTML", "CSS", "Javascript"  ]
+  },
+
+  {
     "title": "Fantasy Project",
     "description": "A 90´s inspired website. First project for the the introduction of HTML and CSS",
     "image": "images/fantasy.png",

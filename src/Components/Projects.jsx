@@ -6,6 +6,7 @@ import reactorsImage from '../Assets/images/reactors.png';
 import fantasyImage from '../Assets/images/fantasy.png';
 import frimarkImage from '../Assets/images/frimark.png';
 import KSSSimage from '../Assets/images/KSSS.png';
+import artquize from '../Assets/images/artquize.png'
 import '../index.css';
 
 const Projects = () => {
@@ -59,6 +60,8 @@ const Projects = () => {
         return todoImage;
       case 'Reactors Project':
         return reactorsImage;
+      case 'ArtQuize':
+        return artquize;
       case 'Fantasy Project':
         return fantasyImage;
       case 'Frimark Project':
