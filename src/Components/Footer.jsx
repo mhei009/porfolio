@@ -8,7 +8,7 @@ import '../index.css';
 const Footer = () => {
 
   const handleDownloadCV = () => {
-    window.open('https://www.dropbox.com/scl/fi/tahj3u6esgum0phmxwrsp/emhp009-gmail.com-0739-869-834-Upplands-V-sby.-Stockholm-Sweden-reallygreatsite.com-10.pdf?rlkey=n1zlrcfu6ozf8zckxseuuf1q0&st=ukfxe6ol&dl=0', '_blank');
+    window.open('https://www.dropbox.com/scl/fi/0woz3jo6c10zqf64rnjh5/en_cv_heidiespiritu.pdf?rlkey=apzscqim7ojfcg5zyjc6g9nw0&st=7go93e0q&dl=0');
   };
 
   return (
