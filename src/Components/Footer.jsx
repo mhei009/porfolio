@@ -8,7 +8,7 @@ import '../index.css';
 const Footer = () => {
 
   const handleDownloadCV = () => {
-    window.open('https://www.dropbox.com/scl/fi/f5k6uf96lcxkvz77139i1/emhp009-gmail.com-0739-869-834-Upplands-V-sby.-Stockholm-Sweden-reallygreatsite.com-13.pdf?rlkey=qwrsrszhi7evd3zkwocxbl8ft&st=x6b4gx55&dl=0');
+    window.open('https://www.dropbox.com/scl/fi/7e6k1fprwkr9x35luwvbz/emhp009-gmail.com-0739-869-834-Upplands-V-sby.-Stockholm-Sweden-reallygreatsite.com-15.pdf?rlkey=okwccib6t9vum16kwljx08cvo&st=4ftuk75u&dl=0', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -23,19 +23,19 @@ const Footer = () => {
             <p className="footer__contact-text">CV</p>
           </li>
           <li className="footer__contact-item">
-            <a className="footer__contact-link" href="mailto:espiritumheidi@gmail.com" aria-label="Email Heidi">
+            <a className="footer__contact-link" href="mailto:espiritumheidi@gmail.com" aria-label="Email Heidi" target="_blank" rel="noopener noreferrer">
               <img className="footer__contact-icon" src={EmailIcon} alt="Email Icon" />
             </a>
             <p className="footer__contact-text">Email</p>
           </li>
           <li className="footer__contact-item">
-            <a className="footer__contact-link" href="https://github.com/mhei009" aria-label="GitHub Profile">
+            <a className="footer__contact-link" href="https://github.com/mhei009" aria-label="GitHub Profile" target="_blank" rel="noopener noreferrer">
               <img className="footer__contact-icon" src={GithubIcon} alt="GitHub Icon" />
             </a>
             <p className="footer__contact-text">GitHub</p>
           </li>
           <li className="footer__contact-item">
-            <a className="footer__contact-link" href="https://www.linkedin.com/in/marieheidiespiritu/" aria-label="LinkedIn Profile">
+            <a className="footer__contact-link" href="https://www.linkedin.com/in/marieheidiespiritu/" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer">
               <img className="footer__contact-icon" src={LinkedinIcon} alt="LinkedIn Icon" />
             </a>
             <p className="footer__contact-text">LinkedIn</p>
