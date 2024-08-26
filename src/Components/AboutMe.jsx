@@ -6,9 +6,11 @@ import { ReactComponent as JsIcon } from '../Assets/Icons/javascript-svgrepo-com
 import { ReactComponent as ReactIcon } from '../Assets/Icons/react-svgrepo-com.svg';
 import { ReactComponent as TailwindIcon } from '../Assets/Icons/tailwind-svgrepo-com.svg';
 import { ReactComponent as FigmaIcon } from '../Assets/Icons/figma-svgrepo-com.svg';
-import { ReactComponent as AdobeIcon } from '../Assets/Icons/adobe-photoshop-svgrepo-com.svg';
 import { ReactComponent as NextIcon } from '../Assets/next.svg';
 import { ReactComponent as ShadcnIcon } from '../Assets/shadcn-ui-seeklogo.svg';
+import { ReactComponent as TypescriptIcon } from '../Assets/Icons/icons8-typescript.svg';
+import { ReactComponent as SanityIcon } from '../Assets/Icons/Sanity.svg';
+
 import '../index.css'; 
 
 function AboutMe() {
@@ -51,7 +53,8 @@ function AboutMe() {
     { name: 'Tailwind', icon: <TailwindIcon className='icon' /> },
     { name: 'Shadcn/ui', icon: <ShadcnIcon className='icon' /> },
     { name: 'Figma', icon: <FigmaIcon className='icon' /> },
-    { name: 'Adobe Photoshop', icon: <AdobeIcon className='icon' /> },
+    { name: 'Typescript', icon: <TypescriptIcon className='icon' /> },
+    { name: 'Sanity', icon: <SanityIcon className='icon' /> }
   ];
 
   return (
@@ -86,6 +89,8 @@ function AboutMe() {
             {skillsList.map((skill, index) => (
               <li className="skill-item" key={index}>
                 {skill.icon}
+                <span className="skill-name">{skill.name}</span>
+
               </li>
             ))}
           </ul>
