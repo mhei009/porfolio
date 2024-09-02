@@ -6,7 +6,7 @@ import reactorsImage from '../Assets/images/reactors.png';
 import fantasyImage from '../Assets/images/fantasy.png';
 import frimarkImage from '../Assets/images/frimark.png';
 import KSSSimage from '../Assets/images/KSSS.png';
-import medix from '../Assets/images/medix.png';
+import mediximage from '../Assets/images/medix.png';
 import '../index.css';
 
 const Projects = () => {
@@ -44,7 +44,7 @@ const Projects = () => {
   const getImage = (title) => {
     switch (title) {
       case 'Medix, A healthcare booking system (Still in progress)': 
-        return medix;
+        return mediximage;
       case 'Royal Swedish Sailing Society History / KSSS Historia':
         return KSSSimage;
       case 'Tick':
