@@ -23,12 +23,16 @@ ul.skill-list {
   list-style: none;
   padding: 0;
   display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto the next line if necessary */
+  justify-content: space-between; /* Evenly distribute the items with space between */
 }
 
 li.skill-item {
-  width: calc(25% - 2rem);
+  flex: 1 1 calc(25% - 2rem); /* Allows items to grow/shrink and set a basis of 25% minus margin */
   margin-left: 1rem;
   margin-top: 1rem;
+  max-width: calc(25% - 2rem); /* Ensures a max width of 25% minus the margin */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
 }
 
 .lottie-container {
