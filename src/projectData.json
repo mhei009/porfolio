@@ -5,7 +5,7 @@
   "title": "Medix - Healthcare Booking System. (In progress)",
     "description": "Medix is a booking management system designed specifically for healthcare services. With simple process of managing patient appointments with tools for both patients and administrators to handle scheduling, confirmations, and cancellations. Integrated with Appwrite for backend service and Twilio for sms schedule confirmation and Shadcn for reusable components",
     "image": "images/medix.png",
-    "codeLink": "https://github.com/mhei009/medix3.git",
+    "codeLink": "https://github.com/mhei009/medix2.git",
     "liveSiteLink": "https://medixcare.vercel.app/",
     "techStack": ["Next.js", "CSS", "Tailwind", "Appwrite", "Twilio", "Shadcn"  ]
 
