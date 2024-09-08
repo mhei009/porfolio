@@ -7,7 +7,7 @@
     "image": "images/medix.png",
     "codeLink": "https://github.com/mhei009/medix2.git",
     "liveSiteLink": "https://medixcare.vercel.app/",
-    "techStack": ["Next.js", "CSS", "Tailwind", "Appwrite", "Twilio", "Shadcn"  ]
+    "techStack": ["Next.js", "Typescript", "CSS", "Tailwind", "Appwrite", "Twilio", "Shadcn"  ]
 
 },
 
