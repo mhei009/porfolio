@@ -18,8 +18,8 @@ ul.skill-list {
   padding: 0;
   margin: 0;
   display: grid; /* Change to grid */
-  grid-template-columns: repeat(3, 1fr); /* Two columns on mobile */
-  gap: 1rem; /* Space between grid items */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 0,5rem; 
 }
 
 @media (min-width: 640px) {
@@ -36,7 +36,7 @@ ul.skill-list {
 
 @media (min-width: 1024px) {
   ul.skill-list {
-    grid-template-columns: repeat(5, 1fr); /* Five columns on wide screens */
+    grid-template-columns: repeat(10, 1fr); /* Five columns on wide screens */
   }
 }
 
