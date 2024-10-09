@@ -83,18 +83,20 @@ function AboutMe() {
           
         </div>
         
-        <div className="skills__container">
-          <h3 className='landingpage__h3'>Tech Stack skills</h3>
-          <ul className='skill-list'>
-            {skillsList.map((skill, index) => (
-              <li className="skill-item" key={index}>
-                {skill.icon}
-                <span className="skill-name">{skill.name}</span>
-
-              </li>
-            ))}
-          </ul>
+        <div className="skills__container py-4 sm:py-6 px-4 sm:px-6 md:px-8">
+  <h3 className="landingpage__h3 text-center text-lg font-bold mb-4">Tech Stack skills</h3>
+  <ul className="skill-list grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 justify-items-center">
+    {skillsList.map((skill, index) => (
+      <li className="skill-item flex flex-col items-center space-y-2" key={index}>
+        <div className="icon-wrapper flex justify-center items-center w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14">
+          {skill.icon}
         </div>
+        <span className="skill-name text-xs sm:text-sm md:text-base text-center">{skill.name}</span>
+      </li>
+    ))}
+  </ul>
+</div>
+
       </motion.div>
       <iframe 
         src="https://lottie.host/embed/12832fd4-9090-49dd-964a-3324b716d807/4eYHtT3ayt.json"
