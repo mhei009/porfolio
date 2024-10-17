@@ -56,7 +56,7 @@ const Projects = () => {
   const getImage = (title) => {
     switch (title) {
 
-      case 'Medix - Healthcare Booking System. ':
+      case 'Medix - Healthcare Booking System.':
         return medixImage;
       case 'Royal Swedish Sailing Society History / KSSS Historia':
         return KSSSimage;
