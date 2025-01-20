@@ -1,6 +1,9 @@
 .projects {
   background-color: var(--white);
   padding: 3rem 1rem;
+  margin-left: auto; 
+  margin-right: auto; 
+  max-width: 1200px; 
 }
 
 .projects__h2 {
@@ -79,33 +82,36 @@
 @media only screen and (min-width: 768px) {
   .projects {
     background-color: var(--white);
-    padding: 7rem;
+    padding: 4rem 2rem;
+    max-width: 1200px; /* Ensure max-width on medium to large screens */
   }
 
-  .projects_h2 {
+  .projects__h2 {
     font-family: "montserrat";
   }
 
   .project__title {
-    font-size: x-large;
-    margin-bottom: 0, 5rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
     font-weight: 600;
     font-family: "montserrat";
   }
 
   .projects__p {
-    margin-bottom: 5rem;
-    font-size: larger;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
   }
 
   .projects-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .project-card {
     display: flex;
     width: 100%;
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
   }
 
   .project-card:nth-child(even) {
