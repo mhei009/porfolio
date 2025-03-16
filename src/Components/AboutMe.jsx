@@ -68,29 +68,22 @@ function AboutMe() {
         className="w-full mx-auto max-w-screen-lg px-4 relative z-1"
       >
         <div className="group grid w-full grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="text-center md:text-left mt-20 px-10">
+          <div className="text-center md:text-left mt-20 px-5">
             <p className="mb-4 font-semibold text-lg text-grey">
-              Hello! I'm Heidi a Frontend Developer student from Hyper Island
-              Stockholm. I have a passion for creating engaging and
-              user-friendly web experiences. I'm constantly expanding my skills
-              in modern frontend technologies.
+            Hi, I'm Heidi, a recent Frontend Development graduate from Hyper Island, Stockholm. My journey in tech has been driven by a passion for creating intuitive and dynamic web experiences. I’ve honed my skills in modern frontend technologies and UX/UI design, and I love exploring new ways to bring ideas to life through code.
             </p>
             <p className="mb-6 text-lg text-grey">
-              The power of technology has always amazed me since I was little.
-              The idea to transform my ideas into reality is a thrilling journey
-              filled with creativity, learning challenges, and fulfillment.
+            While my focus is currently on frontend development, I’m slowly but surely working towards becoming a full-stack developer. I’m excited to continue expanding my skills in both development and design to help shape the future of web experiences.
             </p>
             <h3 className="mb-6 text-lg text-grey">
-              Outside of coding, I enjoy playing sports, console games, and
-              photography. I’m excited about the opportunities to learn more and
-              look forward to leveraging my skills to build the next generation
-              of web experiences.
+            When I'm not coding, you’ll find me enjoying sports, diving into console games, or capturing moments through photography. I’m excited to continue learning and leveraging my skills to help shape the future of web development.
+
             </h3>
           </div>
         </div>
 
-        <div className="skills__container py-4 sm:py-6 px-4 sm:px-6 md:px-8">
-          <h3 className="landingpage__h3 text-center text-lg font-bold mb-4">
+        <div className="skills__container py-4 sm:py-5 px-4 sm:px-6 md:px-8">
+          <h3 className="landingpage__h3 text-center text-lg font-bold mb-4 text-grey">
             Tech Stack skills
           </h3>
           <ul className="skill-list grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 justify-items-center">
