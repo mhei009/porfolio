@@ -28,13 +28,14 @@
   background-color: var(--white);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: left
+  ;
 }
 
 .hero {
   width: 55%;
   margin: 0 auto;
-  margin-top: 7rem;
+  margin-top: 3rem;
   margin-bottom: 1rem;
   display: flex;
   justify-content: center;
@@ -42,8 +43,8 @@
 }
 
 .header__h1 {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 600;
   position: relative;
 }
 
@@ -65,15 +66,15 @@
 }
 
 .introduction {
-  margin-left: 0.6rem;
+ text-align: left;
   display: flex;
   flex-direction: column;
 }
 
 .landingpage__h2 {
-  font-size: large;
+  font-size: 1rem;
   font-family: montserrat;
-  margin-top: 0.4rem;
+  margin-top: 0.2rem;
   font-weight: 500;
   margin-bottom: 1rem;
   text-align: center;
@@ -104,7 +105,7 @@
   bottom: 20px;
   right: 20px;
   width: 3rem;
-  height: 9rem;
+  height: 6rem;
   border: none;
   z-index: 1000;
 }
@@ -133,6 +134,7 @@
     background-color: var(--white);
     min-height: 99vh;
     padding: 7rem;
+    align-items: center;
   }
 
   .hero {
@@ -141,7 +143,8 @@
   }
 
   .header__h1 {
-    font-size: 5rem;
+    font-size: 4rem;
+    margin-left: 0;
   }
 
   .header__container {
@@ -200,7 +203,7 @@
     bottom: 20px;
     right: 25px;
     width: 50px;
-    height: 30rem;
+    height: 20rem;
     border: none;
     z-index: 1000;
   }
