@@ -12,6 +12,16 @@
 },
 
 {
+  "title": "PixyNest - E-commerce Website",
+    "description": "Pixynest is an  e-commerce platform that offers a seamless online shopping experience. With an intuitive user interface and fast, responsive design, Pixynest allows customers to browse, select, and purchase products effortlessly. Powered by Next.js and integrated with modern technologies like Stripe for secure payments and Sanity for content management, Pixynest provides a scalable and customizable solution for online retail businesses.",
+    "image": "images/pixynest.png",
+    "codeLink": "https://github.com/mhei009/piixy-nest-ecommerce.git",
+    "liveSiteLink": "https://piixy-nest-ecommerce.vercel.app/",
+    "techStack": ["Next.js", "Typescript", "Sanity CMS", "Stripe", "Clerk", "CSS", "Tailwind"   ]
+
+},
+
+{
   "title": "Royal Swedish Sailing Society History / KSSS Historia",
     "description": "History website for our client the Royal Swedish Sailing Society.  crafted in collaboration with the innovative minds of Hyper Island's UX/UI students.  First project using Next.js and a headless CMS called Sanity.io ",
     "image": "images/ksss.png",
@@ -27,7 +37,7 @@
     "image": "images/todo.webp",
     "codeLink": "https://github.com/Hyper-Team-3/Todo-Group3.git",
     "liveSiteLink": "https://todo-group3-client.vercel.app",
-    "techStack": ["React", "Node.js", "PostGres", "Tailwind" ]
+    "techStack": ["React", "Node.js", "Postgresql", "Tailwind" ]
     
   },
 

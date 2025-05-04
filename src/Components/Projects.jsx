@@ -8,6 +8,7 @@ import frimarkImage from '../Assets/images/frimark.png';
 import KSSSimage from '../Assets/images/KSSS.png';
 import artquize from '../Assets/images/artquize.png'
 import medixImage from '../Assets/images/medix.png'
+import pixynestImage from '../Assets/images/pixynest.png';
 import '../index.css';
 
 const Projects = () => {
@@ -58,6 +59,8 @@ const Projects = () => {
 
       case 'Medix - Healthcare Booking System.':
         return medixImage;
+        case 'PixyNest - E-commerce Website':
+          return pixynestImage;
       case 'Royal Swedish Sailing Society History / KSSS Historia':
         return KSSSimage;
       case 'Tick':
