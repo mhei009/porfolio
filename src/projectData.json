@@ -22,6 +22,16 @@
 },
 
 {
+  "title": "Mentatt - Mental Health Company Website",
+    "description": "Mentatt is a mental wellness company focused on early detection of mental health challenges. Designed and developed the website from scratch using Next.js, React, and Sanity CMS, ensuring WCAG-compliant accessibility for users of all ages—from teens to the elderly. The result is a fast, responsive, and inclusive platform that supports proactive mental health care.",
+    "image": "images/mentatt.png",
+    "codeLink": "",
+    "liveSiteLink": "",
+    "techStack": ["Next.js", "Typescript", "Sanity CMS", "CSS", "Shadcn", "Tailwind"   ]
+
+},
+
+{
   "title": "Royal Swedish Sailing Society History / KSSS Historia",
     "description": "History website for our client the Royal Swedish Sailing Society.  crafted in collaboration with the innovative minds of Hyper Island's UX/UI students.  First project using Next.js and a headless CMS called Sanity.io ",
     "image": "images/ksss.png",
