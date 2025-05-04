@@ -13,7 +13,7 @@
 
 {
   "title": "PixyNest - E-commerce Website",
-    "description": "Pixynest is an  e-commerce platform that offers a seamless online shopping experience. With an intuitive user interface and fast, responsive design, Pixynest allows customers to browse, select, and purchase products effortlessly. Powered by Next.js and integrated with modern technologies like Stripe for secure payments and Sanity for content management, Pixynest provides a scalable and customizable solution for online retail businesses.",
+    "description": "Pixynest is an  e-commerce platform that offers a seamless online shopping experience. With an intuitive user interface and fast, responsive design, Pixynest allows customers to browse, select, and purchase products effortlessly.",
     "image": "images/pixynest.png",
     "codeLink": "https://github.com/mhei009/piixy-nest-ecommerce.git",
     "liveSiteLink": "https://piixy-nest-ecommerce.vercel.app/",
@@ -23,7 +23,7 @@
 
 {
   "title": "Mentatt - Mental Health Company Website",
-    "description": "Mentatt is a mental wellness company focused on early detection of mental health challenges. Designed and developed the website from scratch using Next.js, React, and Sanity CMS, ensuring WCAG-compliant accessibility for users of all ages—from teens to the elderly. The result is a fast, responsive, and inclusive platform that supports proactive mental health care.",
+    "description": "Mentatt is a mental wellness company focused on early detection of mental health challenges. Designed and developed the website from scratch using Next.js, React, and Sanity CMS, ensuring WCAG-compliant accessibility for users of all ages—from teens to the elderly. ",
     "image": "images/mentatt.png",
     "codeLink": "",
     "liveSiteLink": "",
